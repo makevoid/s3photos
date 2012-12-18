@@ -1,3 +1,5 @@
+source :rubygems
+
 group :development do
   gem "guard"
   gem "guard-livereload"
