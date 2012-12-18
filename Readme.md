@@ -1,5 +1,5 @@
 # S3Photos
-### Generates a photo gallery from your S3 bucket
+### Generates a photo gallery from your Amazon S3 bucket
 
 specify the bucket name in src/s3photos.coffee
 
