@@ -45,13 +45,13 @@ footer {
   .photo_gallery .pos3, .photo_gallery .pos4 {
     -webkit-transform: translate3d(100%, 0, 0);
     -moz-transform: translate(100%, 0); }
-  .photo_gallery .close, .photo_gallery .next, .photo_gallery .prev, .photo_gallery .pause {
+  .photo_gallery .close, .photo_gallery .next, .photo_gallery .prev, .photo_gallery .pause, .photo_gallery .loading, .photo_gallery .info {
     position: absolute;
     z-index: 4;
     color: #cccccc;
     background: rgba(70, 70, 70, 0.4);
     cursor: pointer; }
-    .photo_gallery .close:hover, .photo_gallery .next:hover, .photo_gallery .prev:hover, .photo_gallery .pause:hover {
+    .photo_gallery .close:hover, .photo_gallery .next:hover, .photo_gallery .prev:hover, .photo_gallery .pause:hover, .photo_gallery .loading:hover, .photo_gallery .info:hover {
       color: white;
       background: rgba(40, 40, 40, 0.6); }
   .photo_gallery .close {
@@ -80,9 +80,11 @@ footer {
     font-size: 1.8em; }
   .photo_gallery .loading {
     font-size: 1.4em;
-    position: absolute;
     top: 10px;
     margin: 0 20px;
-    background: rgba(70, 70, 70, 0.5);
     z-index: 4;
     padding: 3px 8px; }
+  .photo_gallery .info {
+    right: 0;
+    font-size: 0.8em;
+    padding: 1px 3px; }
