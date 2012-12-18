@@ -12,20 +12,77 @@ a {
 a:hover {
   color: white; }
 
-body {
+html, body {
   width: 100%;
-  background: #222222; }
-
-.container {
-  margin: 20px auto 20px;
-  width: 95%; }
-
-.content {
-  margin: 0 0 30px 0; }
-
-img {
-  width: 100%;
-  margin: 0 0 30px; }
+  background: #222222;
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 0; }
 
 footer {
   text-align: right; }
+
+.photo_gallery {
+  position: relative;
+  overflow: hidden;
+  height: 100%; }
+  .photo_gallery div {
+    position: absolute;
+    width: 100%;
+    -webkit-transition: -webkit-transform 0.7s ease-in-out;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -moz-transition: all 0.7s ease-in-out;
+    -moz-transform: translate(-100%, 0); }
+  .photo_gallery img {
+    width: 100%;
+    margin: 0 auto;
+    display: block; }
+  .photo_gallery .pos2 {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate(0, 0); }
+  .photo_gallery .pos3, .photo_gallery .pos4 {
+    -webkit-transform: translate3d(100%, 0, 0);
+    -moz-transform: translate(100%, 0); }
+  .photo_gallery .close, .photo_gallery .next, .photo_gallery .prev, .photo_gallery .pause {
+    position: absolute;
+    z-index: 4;
+    color: #cccccc;
+    background: rgba(70, 70, 70, 0.4);
+    cursor: pointer; }
+    .photo_gallery .close:hover, .photo_gallery .next:hover, .photo_gallery .prev:hover, .photo_gallery .pause:hover {
+      color: white;
+      background: rgba(40, 40, 40, 0.6); }
+  .photo_gallery .close {
+    padding: 0px 9px 2px;
+    top: 0;
+    right: 0;
+    font-size: 1.6em;
+    color: #dddddd;
+    background: rgba(70, 70, 70, 0.5); }
+  .photo_gallery .next, .photo_gallery .prev {
+    padding: 3px 5px;
+    top: 47%;
+    font-size: 1.8em; }
+  .photo_gallery .prev {
+    left: 0; }
+  .photo_gallery .next {
+    right: 0; }
+  .photo_gallery .pause {
+    bottom: 0;
+    right: 0;
+    height: 30px;
+    font-size: 1.2em;
+    padding: 3px 0 3px 9px; }
+  .photo_gallery .pause.play {
+    padding: 0px 5px 5px;
+    font-size: 1.8em; }
+  .photo_gallery .loading {
+    font-size: 1.4em;
+    position: absolute;
+    top: 10px;
+    margin: 0 20px;
+    background: rgba(70, 70, 70, 0.5);
+    z-index: 4;
+    padding: 3px 8px; }

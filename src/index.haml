@@ -7,12 +7,18 @@
     %meta{ http_equiv: "X-UA-Compatible", content: "IE=edge,chrome=1" }
     %meta{ property: "og:image", content: "http://mkvphoto.s3.amazonaws.com/nodump_crisi/img_0417.jpg"  }
   %body
-    .container
-      %h1
-        / s3photos
-      .content
-
+    / s3photos
+    .photo_gallery
+      %a.prev <
+      %a.next >
+      %a.pause ▍▍
+      %a.loading
+        Loading images...
+        %span
+    /
       %footer
         %a{ href: "https://github.com/makevoid/s3photos" } S3Photos is open source
     %script{ src: "vendor/jquery.js" }
+    %script{ src: "vendor/jquery_imagesloaded.js" }
+    %script{ src: "phogal.js" }
     %script{ src: "s3photos.js" }

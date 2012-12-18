@@ -8,16 +8,24 @@
     <meta content='http://mkvphoto.s3.amazonaws.com/nodump_crisi/img_0417.jpg' property='og:image'>
   </head>
   <body>
-    <div class='container'>
-      <h1>
-        <!-- s3photos -->
-      </h1>
-      <div class='content'></div>
+    <!-- s3photos -->
+    <div class='photo_gallery'>
+      <a class='prev'><</a>
+      <a class='next'>></a>
+      <a class='pause'>▍▍</a>
+      <a class='loading'>
+        Loading images...
+        <span></span>
+      </a>
+    </div>
+    <!--
       <footer>
         <a href='https://github.com/makevoid/s3photos'>S3Photos is open source</a>
       </footer>
-    </div>
+    -->
     <script src='vendor/jquery.js'></script>
+    <script src='vendor/jquery_imagesloaded.js'></script>
+    <script src='phogal.js'></script>
     <script src='s3photos.js'></script>
   </body>
 </html>
